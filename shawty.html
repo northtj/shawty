@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shawty</title>
+    <link rel="shortcut icon" type="x-icon" href="img/favicon_logosc/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="css/shawtywork.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body style="background: white;">
+
+    <div id="playv">
+        <span id="exit" onclick="closevideo()">X</span>
+        <video controls id="fullvideo">
+            <source src="video/小俊.MP4">
+        </video>
+    </div>
+
+    <div id="playv2">
+        <span id="exit2" onclick="closevideo2()">X</span>
+        <video controls id="fullvideo2">
+            <source src="video/2.14 sea s.mp4">
+        </video>
+    </div>
+
+
+    <!--导航-->
+    <div class="hand">
+        <div class="nav">
+            <ul>
+                <li> <a href="#">WORK</a></li>
+                <li> <a href="#">INFO</a></li>
+                <li> <a href="#">SHOP</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="homelogo">
+        <p class="onelogo">SHAWTY GANG</p>
+    </div>
+
+
+
+    <!--右下角的图标-->
+
+    <div class="inslogo">
+        <a href="https://www.instagram.com/shawty_artistry/?hl=zh-cn" target="_blank"><img src="img/ins.webp"></a>
+    </div>
+    <div class="bilibililogo">
+        <a href="https://space.bilibili.com/8163005" target="_blank"><img src="img/bilibili.webp"></a>
+    </div>
+
+    <div class="kong"></div>
+
+
+    <!--内容-->
+    <div class="onecontent">
+        <div style="width:98px;"></div>
+        <div class="one" data-aos="fade-up" data-aos-offset="400" data-aos-duration="2000" data-aos-easing="ease">
+            <img src="img/weng/IMG_2234.JPG" class="one-img">
+            <div class="one-text" onclick="openvideo()">
+                <p>伟</p>
+            </div>
+        </div>
+        <div style="flex-grow: 1; display: flex; justify-content: center;">
+            <img src="img/箭头.png" style="cursor: default;">
+        </div>
+        <div class="two" data-aos="fade-up" data-aos-offset="400" data-aos-duration="2000" data-aos-easing="ease">
+            <img src="img/weng/IMG_2235.JPG" class="two-img">
+            <div class="two-text" onclick="openvideo2()">
+                <p>伟</p>
+            </div>
+        </div>
+        <div style=" width: 98px;"></div>
+    </div>
+
+
+
+
+    <div class="twocontent" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000" data-aos-easing="ease">
+        <div style="width:122px;"></div>
+        <div class="three">
+            <img src="img/weng/IMG_2237.JPG" class="three-img">
+            <div class="three-text" onclick="openvideo()">
+                <p>伟</p>
+            </div>
+        </div>
+        <div style="flex-grow: 1;"></div>
+        <div class="four">
+            <img src="img/only/IMG_2274.JPG" class="four-img">
+            <div class="four-text" onclick="openvideo2()">
+                <p>唯</p>
+            </div>
+        </div>
+        <div style="width: 98px;"></div>
+    </div>
+
+
+
+    <div class="threecontent" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000" data-aos-easing="ease">
+        <div style="width:98px;"></div>
+        <div class="five">
+            <img src="img/only/IMG_2272.JPG" class="five-img">
+            <div class="five-text" onclick="openvideo()">
+                <p>唯</p>
+            </div>
+        </div>
+        <div style="flex-grow: 1;"></div>
+        <div class="six">
+            <img src="img/only/IMG_2270.JPG" class="six-img">
+            <div class="six-text" onclick="openvideo2()">
+                <p>唯</p>
+            </div>
+        </div>
+        <div style="width: 228px;"></div>
+
+
+    </div>
+
+
+
+    <div class="fourcontent" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000" data-aos-easing="ease">
+        <div style="width:228px;"></div>
+        <div class="seven">
+            <img src="img/only/IMG_2271.JPG" class="seven-img">
+            <div class="seven-text" onclick="openvideo()">
+                <p>唯</p>
+            </div>
+        </div>
+        <div style="flex-grow: 1;"></div>
+        <div class="eight">
+            <img src="img/only/IMG_2301.JPG" class="eight-img">
+            <div class="eight-text" onclick="openvideo2()">
+                <p>唯</p>
+            </div>
+        </div>
+        <div style="width: 228px;"></div>
+
+    </div>
+
+
+    <!--end-->
+    <div class="end">
+        <p>© 2023 by Shawty . Proudly created with Tusbaki</p>
+    </div>
+
+
+
+
+
+
+</body>
+
+<!--video播放-->
+<script>
+    var playv = document.getElementById("playv")
+    var fullvideo = document.getElementById("fullvideo")
+    function openvideo() {
+        playv.style.display = "flex"
+    }
+    function closevideo() {
+        playv.style.display = "none"
+        fullvideo.load()
+
+    }
+</script>
+
+<script>
+    var playv2 = document.getElementById("playv2")
+    var fullvideo2 = document.getElementById("fullvideo2")
+    function openvideo2() {
+        playv2.style.display = "flex"
+    }
+    function closevideo2() {
+        playv2.style.display = "none"
+        fullvideo2.load()
+
+    }
+</script>
+
+
+<script>
+    //获取父元素盒子
+    let onecontainer = document.querySelector('.one')
+    //获取city图片元素
+    let oneImg = document.querySelector('.one-img')
+    //获取出现的文字盒子
+    let oneText = document.querySelector('.one-text')
+    //注册鼠标移入事件
+    onecontainer.addEventListener('mouseenter', function () {
+        //改变图片样式
+        oneImg.style.transform = 'scaleY(1.1)'
+        //显示文字盒子
+        oneText.style.opacity = '1'
+    })
+    //注册鼠标移出事件
+    onecontainer.addEventListener('mouseleave', function () {
+        //改变图片样式
+        oneImg.style.transform = 'scaleY(1)'
+        //显示文字盒子
+        oneText.style.opacity = '0'
+    })
+</script>
+
+
+<script>
+    //获取父元素盒子
+    let twocontainer = document.querySelector('.two')
+    //获取city图片元素
+    let twoImg = document.querySelector('.two-img')
+    //获取出现的文字盒子
+    let twoText = document.querySelector('.two-text')
+    //注册鼠标移入事件
+    twocontainer.addEventListener('mouseenter', function () {
+        //改变图片样式
+        twoImg.style.transform = 'scale(1.1)'
+        //显示文字盒子
+        twoText.style.opacity = '1'
+    })
+    //注册鼠标移出事件
+    twocontainer.addEventListener('mouseleave', function () {
+        //改变图片样式
+        twoImg.style.transform = 'scale(1)'
+        //显示文字盒子
+        twoText.style.opacity = '0'
+    })
+</script>
+
+<script>
+    //获取父元素盒子
+    let threecontainer = document.querySelector('.three')
+    //获取city图片元素
+    let threeImg = document.querySelector('.three-img')
+    //获取出现的文字盒子
+    let threeText = document.querySelector('.three-text')
+    //注册鼠标移入事件
+    threecontainer.addEventListener('mouseenter', function () {
+        //改变图片样式
+        threeImg.style.transform = 'scaleX(1.1)'
+        //显示文字盒子
+        threeText.style.opacity = '1'
+    })
+    //注册鼠标移出事件
+    threecontainer.addEventListener('mouseleave', function () {
+        //改变图片样式
+        threeImg.style.transform = 'scaleX(1)'
+        //显示文字盒子
+        threeText.style.opacity = '0'
+    })
+</script>
+
+<script>
+    //获取父元素盒子
+    let fourcontainer = document.querySelector('.four')
+    //获取city图片元素
+    let fourImg = document.querySelector('.four-img')
+    //获取出现的文字盒子
+    let fourText = document.querySelector('.four-text')
+    //注册鼠标移入事件
+    fourcontainer.addEventListener('mouseenter', function () {
+        //改变图片样式
+        fourImg.style.transform = 'scaleY(1.1)'
+        //显示文字盒子
+        fourText.style.opacity = '1'
+    })
+    //注册鼠标移出事件
+    fourcontainer.addEventListener('mouseleave', function () {
+        //改变图片样式
+        fourImg.style.transform = 'scaleY(1)'
+        //显示文字盒子
+        fourText.style.opacity = '0'
+    })
+</script>
+
+
+<script>
+    //获取父元素盒子
+    let fivecontainer = document.querySelector('.five')
+    //获取city图片元素
+    let fiveImg = document.querySelector('.five-img')
+    //获取出现的文字盒子
+    let fiveText = document.querySelector('.five-text')
+    //注册鼠标移入事件
+    fivecontainer.addEventListener('mouseenter', function () {
+        //改变图片样式
+        fiveImg.style.transform = 'scaleY(1.1)'
+        //显示文字盒子
+        fiveText.style.opacity = '1'
+    })
+    //注册鼠标移出事件
+    fivecontainer.addEventListener('mouseleave', function () {
+        //改变图片样式
+        fiveImg.style.transform = 'scaleY(1)'
+        //显示文字盒子
+        fiveText.style.opacity = '0'
+    })
+</script>
+
+<script>
+    //获取父元素盒子
+    let sixcontainer = document.querySelector('.six')
+    //获取city图片元素
+    let sixImg = document.querySelector('.six-img')
+    //获取出现的文字盒子
+    let sixText = document.querySelector('.six-text')
+    //注册鼠标移入事件
+    sixcontainer.addEventListener('mouseenter', function () {
+        //改变图片样式
+        sixImg.style.transform = 'scaleX(1.1)'
+        //显示文字盒子
+        sixText.style.opacity = '1'
+    })
+    //注册鼠标移出事件
+    sixcontainer.addEventListener('mouseleave', function () {
+        //改变图片样式
+        sixImg.style.transform = 'scaleX(1)'
+        //显示文字盒子
+        sixText.style.opacity = '0'
+    })
+</script>
+
+
+
+<script>
+    //获取父元素盒子
+    let sevencontainer = document.querySelector('.seven')
+    //获取city图片元素
+    let sevenImg = document.querySelector('.seven-img')
+    //获取出现的文字盒子
+    let sevenText = document.querySelector('.seven-text')
+    //注册鼠标移入事件
+    sevencontainer.addEventListener('mouseenter', function () {
+        //改变图片样式
+        sevenImg.style.transform = 'scaleX(1.1)'
+        //显示文字盒子
+        sevenText.style.opacity = '1'
+    })
+    //注册鼠标移出事件
+    sevencontainer.addEventListener('mouseleave', function () {
+        //改变图片样式
+        sevenImg.style.transform = 'scaleX(1)'
+        //显示文字盒子
+        sevenText.style.opacity = '0'
+    })
+</script>
+
+
+<script>
+    //获取父元素盒子
+    let eightcontainer = document.querySelector('.eight')
+    //获取city图片元素
+    let eightImg = document.querySelector('.eight-img')
+    //获取出现的文字盒子
+    let eightText = document.querySelector('.eight-text')
+    //注册鼠标移入事件
+    eightcontainer.addEventListener('mouseenter', function () {
+        //改变图片样式
+        eightImg.style.transform = 'scaleX(1.1)'
+        //显示文字盒子
+        eightText.style.opacity = '1'
+    })
+    //注册鼠标移出事件
+    eightcontainer.addEventListener('mouseleave', function () {
+        //改变图片样式
+        eightImg.style.transform = 'scaleX(1)'
+        //显示文字盒子
+        eightText.style.opacity = '0'
+    })
+</script>
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
